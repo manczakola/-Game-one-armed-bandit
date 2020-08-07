@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jednoręki bandyta</title>
+    <style>
+        #container {
+            width: 80vw;
+            height: 60vh;
+            margin: 6em 3em;
+            text-align: center;
+        }
+
+        #title {
+            font-size: 30px;
+            margin: 3em;
+        }
+
+        .dives {
+            display: flex;
+            justify-content: space-around;
+            margin: 10vh auto 7vh;
+
+        }
+
+        .color {
+            width: 20vw;
+            height: 20vh;
+            float: left;
+            border: solid black;
+        }
+
+        #input {
+            margin: 5vh;
+        }
+
+        input {
+            background-color: rgba(173, 160, 160, 0.233);
+            border-radius: 1em;
+            text-align: center;
+            font-size: 1em;
+            padding: 0.6em;
+            margin: 2vw;
+            outline: none;
+        }
+
+        button {
+            background-color: rgba(48, 41, 41, 0.904);
+            border-radius: 1em;
+            text-align: center;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            font-size: 1em;
+            padding: 0.6em 3em;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: rgba(99, 86, 86, 0.904);
+        }
+
+        #stats {
+            text-transform: uppercase;
+            line-height: 300%;
+            font-size: 1.2em;
+
+        }
+
+
+
+        .result {
+            font-size: 2em;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='container'>
+        <span id='title'>JEDNORĘKI BANDYTA</span>
+        <section class='dives'>
+            <div class='color'></div>
+            <div class='color'></div>
+            <div class='color'></div>
+        </section>
+        <div id='input'>
+            <input id='bid' type="number" placeholder="Podaj stawkę"></input>
+            <button id='start'>ZAKRĘĆ!</button>
+        </div>
+
+        <div id='stats'>
+
+            <span class='result'></span>
+            <div></div>Twoje środki przed kolejną grą to: <span class='wallet'> 0 </span></span>
+            <div>
+                Za tobą <span class='games'> 0 </span> gier, w tym:
+                <span class='wins'> 0 </span> wygranych i
+                <span class='losses'> 0 </span> przegranych.
+            </div>
+
+
+        </div>
+        <script src='Wallet.js'></script>
+        <script src='Statistics.js'></script>
+        <script src='Draw.js'></script>
+        <script src='Result.js'></script>
+        <script src='Game.js'></script>
+        <script src='main.js'></script>
+
+</body>
+
+</html>

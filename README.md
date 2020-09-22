@@ -4,5 +4,5 @@ _______
 
 ### Try it: https://manczakola.github.io/-Game-one-armed-bandit/jednorekibandyta.html.
 
-<img src="https://github.com/manczakola/-Game-one-armed-bandit/blob/master/jednoreki.jpg" width="800px"/>
+<img src="https://github.com/manczakola/Game-one-armed-bandit/blob/master/jednoreki.jpg" width="800px"/>
 
